@@ -1,10 +1,11 @@
 package com.javarush.test.level13.lesson11.home02;
 
-/* Погода
+ /*Погода
 1. В классе Today реализовать интерфейс Weather.
 2. Подумай, как связан параметр String type с методом getWeatherType().
-3. Интерфейсы Weather и WeatherType уже реализованы.
-*/
+3. Интерфейсы Weather и WeatherType уже реализованы.*/
+
+
 
 public class Solution
 {
@@ -15,7 +16,7 @@ public class Solution
         System.out.println(new Today(WeatherType.FROZEN));
     }
 
-    static class Today
+    static class Today implements Weather
     {
         private String type;
 
@@ -28,6 +29,11 @@ public class Solution
         public String toString()
         {
             return String.format("%s for today", this.getWeatherType());
+        }
+
+        @Override
+        public String getWeatherType() {
+            return type;
         }
     }
 }

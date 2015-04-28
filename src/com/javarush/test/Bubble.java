@@ -1,9 +1,5 @@
 package com.javarush.test;
 
-<<<<<<< HEAD
-=======
-import java.lang.reflect.Array;
->>>>>>> 3199d54ef4ddbf2586070f0d8f0dc30f09a78d3b
 import java.util.Arrays;
 
 /**
