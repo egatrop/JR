@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2005 Eugene Matyushkin
  */
-package test;
+package com.javarush.test.test;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
