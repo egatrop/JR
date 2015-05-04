@@ -16,4 +16,5 @@ public class Solution
     public static class Dog {
         public static String name;
     }
+
 }
