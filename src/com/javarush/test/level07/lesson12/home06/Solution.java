@@ -38,42 +38,42 @@ public class Solution
         System.out.println(sister);
     }
 
-    public static class Human
-    {
-        //Написать тут ваш код
-        String name;
-        boolean sex;
-        int age;
-        Human mother;
-        Human father;
 
-        public Human(String name, boolean sex, int age) {
-            this.name = name;
-            this.sex = sex;
-            this.age = age;
-        }
 
-        public Human(String name, boolean sex, int age, Human father, Human mother) {
-            this(name, sex, age);
-            this.mother = mother;
-            this.father = father;
-        }
+}   class Human
+{
+    //Написать тут ваш код
+    String name;
+    boolean sex;
+    int age;
+    Human mother;
+    Human father;
 
-        public String toString()
-        {
-            String text = "";
-            text += "Имя: " + this.name;
-            text += ", пол: " + (this.sex ? "мужской" : "женский");
-            text += ", возраст: " + this.age;
-
-            if (this.father != null)
-                text += ", отец: " + this.father.name;
-
-            if (this.mother != null)
-                text += ", мать: " + this.mother.name;
-
-            return text;
-        }
+    public Human(String name, boolean sex, int age) {
+        this.name = name;
+        this.sex = sex;
+        this.age = age;
     }
 
+    public Human(String name, boolean sex, int age, Human father, Human mother) {
+        this(name, sex, age);
+        this.mother = mother;
+        this.father = father;
+    }
+
+    public String toString()
+    {
+        String text = "";
+        text += "Имя: " + this.name;
+        text += ", пол: " + (this.sex ? "мужской" : "женский");
+        text += ", возраст: " + this.age;
+
+        if (this.father != null)
+            text += ", отец: " + this.father.name;
+
+        if (this.mother != null)
+            text += ", мать: " + this.mother.name;
+
+        return text;
+    }
 }
